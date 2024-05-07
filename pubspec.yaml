@@ -34,6 +34,10 @@ dependency_overrides:
   snapshot:
     git:
       url: https://github.com/lukehutch/snapshot.git
+  firebase_dart:
+    git:
+      url: https://github.com/lukehutch/firebase_dart.git
+      path: packages/firebase_dart
 
 false_secrets:
  - /lib/src/testing.dart 
