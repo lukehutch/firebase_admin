@@ -30,5 +30,10 @@ dev_dependencies:
   lints: ^2.1.1
   mockito: ^5.4.4
 
+dependency_overrides:
+  snapshot:
+    git:
+      url: https://github.com/lukehutch/snapshot.git
+
 false_secrets:
  - /lib/src/testing.dart 
