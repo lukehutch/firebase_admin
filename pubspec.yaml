@@ -2,6 +2,7 @@ name: firebase_admin
 description: A port of the Firebase admin sdk to pure, idiomatic Dart code
 version: 0.3.0-dev.4
 homepage: https://github.com/appsup-dart/firebase_admin
+publish_to: none
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
@@ -12,7 +13,10 @@ dependencies:
   jose: ^0.3.4
   dotenv: ^4.2.0
   openid_client: ^0.4.8
-  firebase_dart: ^1.1.4
+  firebase_dart:
+    git:
+      url: https://github.com/lukehutch/firebase_dart.git
+      path: packages/firebase_dart
   path: ^1.9.0
   meta: ^1.14.0
   http: ">=0.13.0 <2.0.0"
@@ -20,7 +24,9 @@ dependencies:
   collection: ^1.18.0
   gcloud: ^0.8.12
   firebaseapis: ^0.1.2
-  snapshot: ^0.2.6
+  snapshot:
+    git:
+      url: https://github.com/lukehutch/snapshot.git
   _discoveryapis_commons: ^1.0.6
   googleapis: ^9.2.0
 
@@ -29,15 +35,6 @@ dev_dependencies:
   fake_async: ^1.3.1
   lints: ^2.1.1
   mockito: ^5.4.4
-
-dependency_overrides:
-  snapshot:
-    git:
-      url: https://github.com/lukehutch/snapshot.git
-  firebase_dart:
-    git:
-      url: https://github.com/lukehutch/firebase_dart.git
-      path: packages/firebase_dart
 
 false_secrets:
  - /lib/src/testing.dart 
