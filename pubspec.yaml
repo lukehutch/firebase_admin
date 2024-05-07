@@ -23,12 +23,12 @@ dependencies:
   crypto_keys: ^0.3.0
   collection: ^1.18.0
   gcloud: ^0.8.12
-  firebaseapis: ^0.1.2
+  firebaseapis: ^0.2.0
   snapshot:
     git:
       url: https://github.com/lukehutch/snapshot.git
   _discoveryapis_commons: ^1.0.6
-  googleapis: ^9.2.0
+  googleapis: ^13.1.0
 
 dev_dependencies:
   test: ^1.25.5
